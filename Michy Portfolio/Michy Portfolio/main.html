@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michy - Portfólio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/4-foto.png">
+    <link href="./assets/css/style2.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Average+Sans&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+       
+        <section class="principal">
+            <img class="fundo" src="./assets/img/1-fundo.png">
+            <nav class="navbar">
+                <a href="./index.html">
+                    <img class="logo-nome" src="./assets/img/3-logo-nome.png" alt="Logo Nome">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#section1">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formulario">Contato</a></li>
+                </ul>
+                <a href="./assets/doc/Curriculo - mirela.pdf" download="Curriculo" class="btn-download">Download CV
+                    ➜</a>
+            </nav>
+
+            <div class="conteudo">
+                <h1 class="fade-in">Bem Vindo(a)</h1>
+                <img class="foto fade-in" src="./assets/img/4-foto.png">
+                <p class="fade-in">Puxe uma cadeira e sinta-se em casa!</p>
+            </div>
+        </section>
+
+        <section id="section1" class="sobre">
+            <div class="sombra">
+                <h2 class="fade-in">Quem é Michy?</h2>
+                <p class="fade-in">Prazer, meu nome é Mirela! Tenho 24 anos e sou de São Paulo.<br>
+                    Desde pequena sou apaixonada por Games, mas só tive a oportunidade de entrar nesse mundo aos 17
+                    anos.<br>
+                    Sempre fui muito criativa e SIM eu escutava muito a frase: “Faz um desenho meu?”.<br>
+                    Por ser dessa área a gente sempre fica confuso com o que fazer no futuro (são tantas opções), mas
+                    finalmente aos 24<br>anos descobri o que eu quero estudar e seguir estudando.
+                    <br>Atualmente me encontro na Programação e faço Desenvolvimento de Paginas web!
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <div class="sombra2">
+                <h1 class="fade-in">Projetos</h1>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://sociallinksmichy.netlify.app/" target="_blank"><img src="./assets/img/captura 1.png" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block" style="background-color: #1B1B1B; border-radius: 20px;">
+                                <h5 >Social Media Links</h5>
+                                <p>Criado para o challange do FrontEnd Mentor. Clique na imagem para visitar o site!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://blogcardmichy.netlify.app/" target="_blank"><img src="./assets/img/captura 2.png" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block" style="background-color: #1B1B1B; border-radius: 20px;">
+                                <h5>Blog Card</h5>
+                                <p>Criado para o challange do FrontEnd Mentor. Clique na imagem para visitar o site!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://sistemasolarmichy.netlify.app/" target="_blank"><img src="./assets/img/captura 3.png" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block" style="background-color: #1B1B1B; border-radius: 20px;">
+                                <h5>Sistema Solar</h5>
+                                <p>Criado durante o curso de FrontEnd no Senai    . Clique na imagem para visitar o site!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario" class="formulario d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div class="col-md-6">
+                <form action="https://formspree.io/f/xrbgkvyl" method="POST" class="p-4 bg-light shadow rounded">
+                  <!-- Campo Nome -->
+                  <div class="mb-3">
+                    <label for="validationCustom01" class="form-label">Nome completo:</label>
+                    <input type="text" name="nome" class="form-control" id="validationCustom01" placeholder="Pedro da Silva" required>
+                  </div>
+          
+                  <!-- Campo E-mail -->
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                      Digite um email válido!
+                    </div>
+                  </div>
+          
+                  <!-- Campo Mensagem -->
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+                    <textarea class="form-control" name="mensagem" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  </div>
+          
+                  <button class="btn btn-primary w-100" type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          
+    </main>
+
+    <div class="final">
+        <h2>Já podemos marcar nosso café da tarde?</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/miih_oliveira37/" target="_blank">
+                <img class="logo-nome fade-in" src="./assets/img/6-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/mirela-oliveira-4062681a0/" target="_blank">
+                <img class="logo-nome fade-in" src="./assets/img/7-linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MichyOliveira" target="_blank">
+                <img class="logo-nome fade-in" src="./assets/img/5-github.png" alt="GitHub">
+            </a>
+        </div>
+    </div>
+
+    <footer>Feito com 🤎 | Desenvolvido por Michy</footer>
+
+    <button id="btnTop" title="Voltar ao topo">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
