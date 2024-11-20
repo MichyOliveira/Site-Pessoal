@@ -105,8 +105,6 @@ body {
     transform: scale(1.05);
     /* Ligeiro aumento no tamanho */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 80%;
-    left:50%;
     transform: translate(-50%, -50%);
     color: white;
 }
