@@ -12,18 +12,6 @@
     --color-brown-medio: #BA937D;
     --color-brown-claro: #E5D7CF;
 }
-/* Efeito de animação de fade-in */
-.fade-in {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-
-  /* Quando o elemento entra na tela, a classe 'visible' é adicionada */
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 
   /* Fade-in ao carregar a página */
 .fade-in {
