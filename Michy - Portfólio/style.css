@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(./assets/img/img-5.png);
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*Header*/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 2em;
+    color: #37593e;
+    pointer-events: none;
+}
+.navigation a{
+    text-decoration: none;
+    color: #37593e;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active{
+    background: #2c4434;
+    color: #fff;
+}
+
+/*Primeira section - Primeiro parallax*/
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parallax h2{
+    pointer-events: none;
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.parallax img {
+    position: absolute;
+    top: 0;
+    height: 110vh;
+    width: 110%;
+    pointer-events: none;
+    object-fit: cover;
+}
+/* Efeito suave no parallax com movimento do mouse */
+.parallax img,
+#text {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+.parallax::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    pointer-events: none;
+    z-index: 10;
+}
+.btn-download {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #37593e;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    z-index: 20;
+}
+.btn-download:hover {
+    background-color: #2c4434;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+/*Segunda section - Sobre e Segundo parallax*/
+.sec {
+    position: relative;
+    background: #2c4434;
+    padding: 100px;
+    pointer-events: none;
+}
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.sobre-mim {
+    margin: 0px 790px 0px 0px;
+    text-align: justify;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.8;
+}
+.sobre-mim ul {
+    margin: 20px 0;
+    padding-left: 1.2em;
+    text-align: left;
+    list-style-position: inside;
+}
+.sobre-mim ul li {
+    margin-bottom: 10px;
+}
+
+.parallax2 {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.parallax2 img{
+    position: absolute;
+    height: 80vh;
+}
+.sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+.sec * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Terceira Section - Serviços*/
+.serv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fundo fixo e ao fundo */
+#fundo {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card-container {
+  position: absolute;
+  width: 1000px; /* ou ajuste conforme o tamanho da sua imagem */
+  height: auto;
+  z-index: 1;
+}
+
+.card {
+  width: 1000px;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Botão por cima da imagem */
+.card-btn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  padding: 10px 20px;
+  background-color: #aa8659; /* cor com transparência */
+  color: #ffefe1;
+  border: none;
+  border-radius: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-btn:hover {
+  background-color: #dab280;
+  color: #2c4434;
+  border: 2px;
+  border-color: black;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Posições dos cards (ajuste conforme o layout do background) */
+#card1 {
+  top: 55%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+#card2 {
+  top: 55%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+#card3 {
+  top: 55%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.footer{
+    background-color: #2c4434;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+}
